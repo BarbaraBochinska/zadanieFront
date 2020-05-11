@@ -1,0 +1,14 @@
+<table mat-table>
+  <tr mat-header-row>
+    <th>Stacja</th>
+    <th>Data Pomiaru</th>
+    <th>Kierunek Wiatru</th>
+    <th>Ciśnienie</th>
+  </tr>
+  <tr mat-row *ngFor="let station of stations;">
+    <td>{{station.stacja}}</td>
+    <td>{{station.dataPomiaru}}</td>
+    <td>{{station.kierunekWiatru}}</td>
+    <td>{{station.cisnienie}}</td>
+  </tr>
+</table>
