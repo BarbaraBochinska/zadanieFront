@@ -1,14 +1,16 @@
-<table mat-table>
-  <tr mat-header-row>
+<button (click)="onButtonClicked()">{{'[pobierz dane]'|uppercase}}</button>
+
+<table>
+  <tr >
     <th>Stacja</th>
     <th>Data Pomiaru</th>
     <th>Kierunek Wiatru</th>
     <th>Ciśnienie</th>
   </tr>
-  <tr mat-row *ngFor="let station of stations;">
+  <tr *ngFor="let station of stations;">
     <td>{{station.stacja}}</td>
-    <td>{{station.dataPomiaru}}</td>
-    <td>{{station.kierunekWiatru}}</td>
+    <td>{{station.data_pomiaru}}</td>
+    <td>{{station.kierunek_wiatru}}</td>
     <td>{{station.cisnienie}}</td>
   </tr>
 </table>
